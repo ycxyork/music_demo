@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐生成模型 Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6">音乐生成模型 Demo</h1>
+        
+        <!-- 第一个表格 整句歌词-->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold mb-2">整句歌词音乐生成</h2>
+            <p class="text-gray-600">本示例展示了使用参考歌词和参考音频生成的音乐句子片段。</p>
+            <p class="text-gray-600 mb-4">请点击播放按钮试听参考音频和生成音频。</p>
+            <table class="w-full border-collapse border border-gray-300 rounded-lg">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border border-gray-300 p-3 w-1/4">参考歌词</th>
+                        <th class="border border-gray-300 p-3 w-1/3">参考音频</th>
+                        <th class="border border-gray-300 p-3 w-1/3">生成音频</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border"><!-- 1-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">风吹过的夏天,你我约定的情怀</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%AE%9D%E7%9F%B3Gem%E9%87%8E%E7%8B%BCDisco_01_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%AE%9D%E7%9F%B3Gem%E9%87%8E%E7%8B%BCDisco_01_%E9%A3%8E%E5%90%B9%E8%BF%87%E7%9A%84%E5%A4%8F%E5%A4%A9%2C%E4%BD%A0%E6%88%91%E7%BA%A6%E5%AE%9A%E7%9A%84%E6%83%85%E6%80%80._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 2-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">我们的爱情到底可以活多久</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%AE%9D%E7%9F%B3Gem%E9%87%8E%E7%8B%BCDisco_02_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%AE%9D%E7%9F%B3Gem%E9%87%8E%E7%8B%BCDisco_02_%E6%88%91%E4%BB%AC%E7%9A%84%E7%88%B1%E6%83%85%E5%88%B0%E5%BA%95%E5%8F%AF%E4%BB%A5%E6%B4%BB%E5%A4%9A%E4%B9%85._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 3-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">每一次我想你,都听见那熟悉的旋律</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E6%9D%8E%E7%8E%89%E5%88%9A%E8%B4%B5%E5%A6%83%E9%86%89%E9%85%92_01_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E6%9D%8E%E7%8E%89%E5%88%9A%E8%B4%B5%E5%A6%83%E9%86%89%E9%85%92_01_%E6%AF%8F%E4%B8%80%E6%AC%A1%E6%88%91%E6%83%B3%E4%BD%A0%2C%E9%83%BD%E5%90%AC%E8%A7%81%E9%82%A3%E7%86%9F%E6%82%89%E7%9A%84%E6%97%8B%E5%BE%8B._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 4-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">美妆购物分享,我买的你值得拥有</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E6%9D%8E%E7%8E%89%E5%88%9A%E8%B4%B5%E5%A6%83%E9%86%89%E9%85%92_02_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E6%9D%8E%E7%8E%89%E5%88%9A%E8%B4%B5%E5%A6%83%E9%86%89%E9%85%92_02_%E7%BE%8E%E5%A6%86%E8%B4%AD%E7%89%A9%E5%88%86%E4%BA%AB%2C%E6%88%91%E4%B9%B0%E7%9A%84%E4%BD%A0%E5%80%BC%E5%BE%97%E6%8B%A5%E6%9C%89._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 5-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">青春是一场大雨,即使冷得透心</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E9%9B%B6%E7%82%B9%E4%B9%90%E9%98%9F%E7%9B%B8%E4%BF%A1%E8%87%AA%E5%B7%B1_01_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E9%9B%B6%E7%82%B9%E4%B9%90%E9%98%9F%E7%9B%B8%E4%BF%A1%E8%87%AA%E5%B7%B1_01_%E9%9D%92%E6%98%A5%E6%98%AF%E4%B8%80%E5%9C%BA%E5%A4%A7%E9%9B%A8%2C%E5%8D%B3%E4%BD%BF%E5%86%B7%E5%BE%97%E9%80%8F%E5%BF%83._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 6-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">野火烧不尽,春风吹又生</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E9%9B%B6%E7%82%B9%E4%B9%90%E9%98%9F%E7%9B%B8%E4%BF%A1%E8%87%AA%E5%B7%B1_02_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E9%9B%B6%E7%82%B9%E4%B9%90%E9%98%9F%E7%9B%B8%E4%BF%A1%E8%87%AA%E5%B7%B1_02_%E9%87%8E%E7%81%AB%E7%83%A7%E4%B8%8D%E5%B0%BD%2C%E6%98%A5%E9%A3%8E%E5%90%B9%E5%8F%88%E7%94%9F._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 7-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">此身经已熟,不唯餘梦好</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E7%8E%8B%E5%BF%83%E5%87%8C%E7%88%B1%E4%BD%A0_01_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E7%8E%8B%E5%BF%83%E5%87%8C%E7%88%B1%E4%BD%A0_01_%E6%AD%A4%E8%BA%AB%E7%BB%8F%E5%B7%B2%E7%86%9F%2C%E4%B8%8D%E5%94%AF%E9%A4%98%E6%A2%A6%E5%A5%BD._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 8-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">你最近看了什么电影</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E7%8E%8B%E5%BF%83%E5%87%8C%E7%88%B1%E4%BD%A0_02_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E7%8E%8B%E5%BF%83%E5%87%8C%E7%88%B1%E4%BD%A0_02_%E4%BD%A0%E6%9C%80%E8%BF%91%E7%9C%8B%E4%BA%86%E4%BB%80%E4%B9%88%E7%94%B5%E5%BD%B1__diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 9-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">情为何物,只应天上有,人间能得几回闻</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%91%A8%E6%9D%B0%E4%BC%A6%E9%9D%92%E8%8A%B1%E7%93%B7_01_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%91%A8%E6%9D%B0%E4%BC%A6%E9%9D%92%E8%8A%B1%E7%93%B7_01_%E6%83%85%E4%B8%BA%E4%BD%95%E7%89%A9%2C%E5%8F%AA%E5%BA%94%E5%A4%A9%E4%B8%8A%E6%9C%89%2C%E4%BA%BA%E9%97%B4%E8%83%BD%E5%BE%97%E5%87%A0%E5%9B%9E%E9%97%BB__diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 10-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">一路上有你,似水的流年</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%91%A8%E6%9D%B0%E4%BC%A6%E9%9D%92%E8%8A%B1%E7%93%B7_02_max10s.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yuchenxin/music_demo/demo/%E5%91%A8%E6%9D%B0%E4%BC%A6%E9%9D%92%E8%8A%B1%E7%93%B7_02_%E4%B8%80%E8%B7%AF%E4%B8%8A%E6%9C%89%E4%BD%A0%2C%E4%BC%BC%E6%B0%B4%E7%9A%84%E6%B5%81%E5%B9%B4._diff.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- 第二个表格 段落歌词-->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-2">段落歌词音乐生成</h2>
+            <p class="text-gray-600">本示例展示了使用参考歌词和参考音频生成的音乐段落片段。</p>
+            <p class="text-gray-600 mb-4">请点击播放按钮试听参考音频和生成音频。</p>
+            <table class="w-full border-collapse border border-gray-300 rounded-lg">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border border-gray-300 p-3 w-1/3">参考歌词</th>
+                        <th class="border border-gray-300 p-3 w-1/3">参考音频</th>
+                        <th class="border border-gray-300 p-3 w-1/3">生成音频</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border"><!-- 1-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            剑，划破苍天。却斩不断，往事尘缘。
+                            也许东风一夜，同烈火蔓延。将情仇爱恨，留在指尖。
+                            战，生死一战。源源不断，惊涛逐岸。
+                            天边夕阳如血，染断壁残垣。随风烛墨卷，存天地人间。
+                            往日，一琴一曲一书一页。随江湖走远，一人一生一愿，倚剑对天。
+                            [chorus]
+                            听长风悲鸣，乱世豪情。看苍山风雪，漫天飘零。
+                            生死随天定，红颜多薄命。江湖谁能相付真心。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/451837413_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/451837413_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 2-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[intro]
+                            [verse]
+                            看窗外的世界，繁华喧闹的夜。孤独身影随风，在空中摇摇缀点。
+                            秋风萧瑟凛冽，满天飞舞风雪。因为你的出现，打破所有的一切。
+                            月儿阴晴圆缺，照着疲惫黑夜。人来人往，拼命追逐未知的一切。
+                            穿梭从前的街，感觉如此强烈。你会和我回到，那个记忆的年月。
+                            [chorus]
+                            我的爱没了解，你在哪一个世界。如果当初没拒绝，何苦不辞而别。
+                            我若坚定一些，不曾将你忽略。再多一些体贴，爱是否还会终结。错觉。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/342368_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/342368_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 3-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            我要的爱只在你身上存在，要不是你不会哭得笑得傻得像小孩。在一起不简单别轻易说分开。
+                            [chorus]
+                            你给的爱都变成我的依赖，依赖着你的我可以尽情不勇敢。因为你我相信爱存在。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/1460268605_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/1460268605_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 4-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[intro]
+                            [verse]
+                            刚刚才剪了头发，一出门一场大暴雨baby。刚买了白色球鞋，赶时间只能挤地铁baby。
+                            想好要带的文件，怎么会突然就不见了baby。郁闷的像个小鬼，今天全世界和我作对。
+                            出门带了一包香烟，结果被大雨淋了个遍baby。举头我望着明月，思念着的人在另一边baby。
+                            多少人被现实击溃，谁又记得自己曾经多狂野，变了。是否还记得昨天，我们说过的有梦就追。
+                            [chorus]
+                            Oh baby so many nights been so long，so long so long。是我犯的错，我懂。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/1811126280_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/1811126280_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 5-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            青春的岁月像条河，岁月的河啊。
+                            汇成歌汇成歌汇成歌，一支歌一支深情的歌。
+                            一支拨动着人们心弦的歌，一支歌一支深情的歌。幸福和欢乐是那么多。
+                            [chorus]
+                            啊啊啊。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/1914674166_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/1914674166_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 6-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[intro]
+                            [verse]
+                            这里是我的家，是谁为你披上了婚纱。
+                            爱在阳光下面开满了鲜花，我是否想念着她。我是否也爱着他。
+                            [chorus]
+                            还记得吗还记得吗，清晨微风亲吻脸颊。
+                            在我的枕边小声诉说情话，还记得吗。
+                            [inst]</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/2145534636_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/2145534636_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 7-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            宇宙中默默自转的星球，暝暝之中你要现在遇见我。
+                            我看过瞬间燃烧的花火，昙花一现之后悄悄的坠落。
+                            我醉过斟下冰凉的美酒，醒来以后还有你在陪着我。
+                            那种微酸的滋味，有点微醺的感觉。
+                            梦做一半比较美，爱我的人还没睡。
+                            [chorus]
+                            不想睡我要陪你一整夜，我要幸福的催眠。
+                            天旋地转的晕眩，不想睡我要陪你一整夜。
+                            我要今天的完美，不要明天的幻觉。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/529840535_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/529840535_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 8-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            生老病死不过眨眼，我要把青春留在银幕。
+                            大展宏图憋在嘴里用我的行动倾诉，收获甜美果实用继续前进表示庆祝。
+                            我站得高看得远，所以清醒的人在盼我领路。
+                            看我带着他们游过眼前那片汪洋，也会带着他们再跃过下一片荒凉。
+                            我会永远记得到底有谁帮忙，也会永远记得没来得及踩死的蟑螂。
+                            骄傲到不能狼狈，自尊心不能荒废。
+                            勇猛的将领将会昂起头登上王位，奴才们生生世世长跪。
+                            [chorus]
+                            躺在床上我的感觉非常良好，看着手机网络恶评没法把我伤到。
+                            恨我的还太少要怎么把我放倒，爱我的多了去把他们挤在墙角。
+                            真的无所谓，真的无所谓。真的无所谓。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/8aa021e78827f22affda99dcadb4c005_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/8aa021e78827f22affda99dcadb4c005_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 9-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[intro]
+                            [verse]
+                            你说爱我的那天，就像过往云烟。想起那过往从前美好，消失而不见。
+                            你手中的香烟，氲成无数的光圈。在朦胧之间，怎说的尽你我的遗憾。
+                            愿往事随风飘散，可依旧还会浮现。没能说出的留恋，只能在心里蔓延。红丝布满的双眼，怎掩盖你的眷恋。
+                            想把你留在身边，从新再一次爱恋。想拥抱着你入眠，述说对你的依恋。
+                            [chorus]
+                            可现实再度浮现，思念却难以下咽。红丝布满的双眼，怎掩盖你的眷恋。想把你留在身边，从新再一次爱恋。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/%E8%AE%A9%E6%88%91%E7%95%99%E5%9C%A8%E4%BD%A0%E8%BA%AB%E8%BE%B9%20%5B1818805576%5D_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/20Chinese_from_validation_withtag_cfg_Codeccond_20241224/%E8%AE%A9%E6%88%91%E7%95%99%E5%9C%A8%E4%BD%A0%E8%BA%AB%E8%BE%B9%20%5B1818805576%5D_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+                    <tr class="border"><!-- 10-->
+                        <td class="p-3 text-left whitespace-pre-line border border-gray-300">[verse]
+                            纵横天下，心怀汉家。踏遍关山明月，不教边庭牧马。
+                            怕三月春城见落花飞絮，错过良辰美景。
+                            以绣阁之彦，扮红粉英雄，琼闺依旧有琴声。
+                            [chorus]
+                            我是这耀眼的瞬间，是划过天边的刹那火焰。
+                            我为你来看我不顾一切，我将熄灭永不能再回来。
+                            我在这里啊，就在这里啊。惊鸿一般短暂，像夏花一样绚烂。</td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/output_audios_songmultiseggen_from_validation/451837413_0_ref.wav" style="display: block; margin: 0 auto;"></audio></td>
+                        <td class="p-3 text-center border border-gray-300"><audio controls src="https://image-url-2-feature-1251524319.cos.ap-shanghai.myqcloud.com/SongGen/yexiao/LLMouts/2Chinese_reference_from_validation_withtag_cfg_Codeccond_20241224/1_from_451837413_0_cfg_1.7.wav" style="display: block; margin: 0 auto;"></audio></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
